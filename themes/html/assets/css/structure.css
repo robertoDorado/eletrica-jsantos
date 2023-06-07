@@ -1,0 +1,157 @@
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+.home-cover {
+    position: relative;
+    background: url(../img/cover.png);
+    height: 119vh;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    z-index: 2;
+}
+
+@media (min-width: 1000px) {
+
+    .bubles {
+        position: absolute;
+        width: 234.39px;
+        height: 236.27px;
+        margin-left: 874.33px;
+        top: 210.02px;
+        opacity: 0.8;
+    }
+
+    .bubles-2 {
+        position: absolute;
+        width: 180.39px;
+        height: 187.27px;
+        left: 705.93px;
+        top: 511.73px;
+        opacity: .8;
+    }
+
+    .woman-photo {
+        position: relative;
+        width: 438px;
+        height: 746px;
+        margin-left: 589px;
+        z-index: 1;
+    }
+
+    .stars {
+        position: absolute;
+        width: 332.08px;
+        height: 130.82px;
+        left: 827.38px;
+        top: 598.17px;
+        z-index: 1;
+    }
+
+    .ligth {
+        position: absolute;
+        width: 246.58px;
+        height: 229.71px;
+        left: 589.55px;
+        top: 334.72px;
+        z-index: 2;
+    }
+
+    .title-cover {
+        position: absolute;
+        left: 112px;
+        top: 92px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 4rem;
+        width: 32rem;
+        letter-spacing: -6px;
+        font-family: 'Gotham';
+    }
+
+    .home-cover p {
+        position: absolute;
+        color: #fff;
+        top: 18rem;
+        width: 36rem;
+        line-height: 2.5rem;
+        font-family: 'Gotham';
+    }
+
+    .product-btn {
+        position: absolute;
+        top: 28rem;
+        left: 8rem;
+        text-transform: uppercase;
+        background-color: #FBAF17 !important;
+        color: #000 !important;
+        font-weight: bold !important;
+        font-size: 15px;
+        padding: 1rem !important;
+        width: 20rem;
+        border-color: #FBAF17 !important;
+
+        -webkit-box-shadow: 0px 2px 63px 17px rgba(251, 175, 23, 0.12);
+        -moz-box-shadow: 0px 2px 63px 17px rgba(251, 175, 23, 0.12);
+        box-shadow: 0px 2px 63px 17px rgba(251, 175, 23, 0.12);
+    }
+
+    .product-btn:hover {
+        -webkit-box-shadow: 0px 2px 63px 17px rgba(251, 175, 23, 0.4);
+        -moz-box-shadow: 0px 2px 63px 17px rgba(251, 175, 23, 0.4);
+        box-shadow: 0px 2px 63px 17px rgba(251, 175, 23, 0.4);
+    }
+
+    .aboutus-btn {
+        position: absolute;
+        top: 33rem;
+        left: 8rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold !important;
+        font-size: 15px;
+        background-color: transparent !important;
+        border-color: #fff !important;
+        padding: 1rem !important;
+        width: 20rem;
+    }
+
+    .aboutus-btn:hover {
+        background-color: #fff !important;
+        color: #000 !important;
+
+        -webkit-box-shadow: 0px 2px 63px 17px rgba(255, 255, 255, 0.1);
+        -moz-box-shadow: 0px 2px 63px 17px rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 2px 63px 17px rgba(255, 255, 255, 0.1);
+    }
+
+    .see-more {
+        position: absolute;
+        top: 40rem;
+        color: #fff;
+        font-family: 'Gotham';
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .see-more a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .link-see-more {
+        margin-left:1rem;
+    }
+
+    .link-see-more:hover {
+        opacity: .5;
+    }
+
+    .link-see-more:hover+.icon-arrow {
+        opacity: .5;
+    }
+}
