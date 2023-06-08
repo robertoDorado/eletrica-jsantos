@@ -1,9 +1,37 @@
 @import url('https://fonts.cdnfonts.com/css/gotham');
 
+@keyframes pulse {
+    0% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+    }
+
+    10% {
+        animation-timing-function: ease-in;
+        transform: scale(0.91);
+    }
+
+    17% {
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+    }
+
+    33% {
+        animation-timing-function: ease-in;
+        transform: scale(0.87);
+    }
+
+    45% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
+}
+
 .home-cover {
     position: relative;
     background: url(../img/cover.png);
-    height: 119vh;
+    height: 65vh;
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,7 +40,417 @@
     z-index: 2;
 }
 
+.home-cover p {
+    color: #fff;
+    text-align: center;
+    font-family: 'Gotham';
+    line-height: 1.9rem;
+}
+
+.bubles {
+    display: none;
+}
+
+.bubles-2 {
+    display: none;
+}
+
+.woman-photo {
+    display: none;
+}
+
+.stars {
+    display: none;
+}
+
+.ligth {
+    display: none;
+}
+
+.title-cover {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    font-family: 'Gotham';
+    color: #fff;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.container-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-btn {
+    text-transform: uppercase;
+    background-color: #FBAF17 !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 15px;
+    padding: 1rem !important;
+    width: 20rem;
+    border-color: #FBAF17 !important;
+
+    -webkit-box-shadow: 0px 2px 63px 17px rgba(251, 175, 23, 0.12);
+    -moz-box-shadow: 0px 2px 63px 17px rgba(251, 175, 23, 0.12);
+    box-shadow: 0px 2px 63px 17px rgba(251, 175, 23, 0.12);
+}
+
+.aboutus-btn {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold !important;
+    font-size: 15px;
+    background-color: transparent !important;
+    border-color: #fff !important;
+    padding: 1rem !important;
+    width: 20rem;
+    margin-top: 1rem;
+}
+
+.see-more {
+    color: #fff;
+    font-family: 'Gotham';
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 16rem;
+    padding: 1rem 0;
+}
+
+.see-more a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link-see-more {
+    margin-left: 1rem;
+}
+
+.nav-menu {
+    background-color: #FBAF17;
+}
+
+.btn-contact {
+    display: none !important;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.submenu {
+    display: none;
+}
+
+.angle-up-icon {
+    display: none !important;
+}
+
+.angle-down-icon {
+    display: none !important;
+}
+
+.angle-down-icon-mobile {
+    position: absolute;
+    top: 10.8rem;
+    left: 8rem;
+}
+
+.btn-contact-mobile {
+    background-color: #202332 !important;
+    border-color: #202332 !important;
+    padding: 1rem 3rem !important;
+    height: 2rem;
+
+    display: flex !important;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.menu-mobile-container {
+    padding: 1rem 0;
+}
+
+.underline-mobile {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.submenu-mobile {
+    margin-top: 1rem;
+    display: none;
+}
+
+.submenu-mobile img {
+    width: 30px;
+    margin-left: 2rem;
+    padding: 1rem 0;
+}
+
+.submenu-mobile ul li {
+    list-style: none;
+}
+
+.submenu-mobile ul li a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #202332;
+}
+
+.submenu-mobile ul {
+    padding: 0;
+}
+
+.show {
+    display: block;
+}
+
 @media (min-width: 1000px) {
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 40%;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        padding: 2px 16px;
+    }
+
+    .bubles-section-1 {
+        position: absolute;
+        left: 29rem;
+        width: 96px;
+        opacity: .5;
+    }
+
+    .bubles-section-2 {
+        position: absolute;
+        left: 58.5rem;
+        z-index: -1;
+        top: 60rem;
+    }
+
+    .background-section-1 h2 {
+        color: #fff;
+        font-family: 'Gotham';
+        text-transform: uppercase;
+        font-weight: bold;
+        position: absolute;
+        top: 74rem;
+        left: 25rem;
+    }
+
+    .background-section-1 {
+        background: url(../img/background-section-1.png);
+        width: 750px;
+        height: 350px;
+        z-index: 2;
+        border-radius: 1rem;
+    }
+
+    .link-menu-category:hover .angle-up-icon {
+        display: block !important;
+    }
+
+    .link-menu-category:hover .submenu {
+        display: block;
+        opacity: 1;
+    }
+
+    .submenu ul li a:hover {
+        background-color: transparent !important;
+        color: #202332;
+    }
+
+    .submenu ul li a {
+        margin-left: 1rem;
+        text-decoration: none;
+        color: #202332;
+    }
+
+    .submenu ul li img {
+        width: 40px;
+    }
+
+    .submenu ul li {
+        list-style: none;
+        margin: 1rem 0;
+    }
+
+    .submenu {
+        position: absolute;
+        z-index: 3;
+        top: 4rem;
+        right: 25rem;
+        background-color: #fff;
+        width: 300px;
+        border-radius: 1rem;
+        display: none;
+        opacity: 0;
+        transition: opacity .5s ease;
+    }
+
+    .angle-up-icon {
+        color: #fff;
+        position: absolute;
+        top: 3.3rem;
+        z-index: 4;
+        right: 34.5rem;
+        display: none !important;
+    }
+
+    .angle-down-icon {
+        position: absolute;
+        right: 32.7rem;
+        top: 2rem;
+        display: block !important;
+    }
+
+    .btn-contact:hover {
+        animation: pulse 2s ease 0s 1 normal forwards;
+    }
+
+    .btn-contact {
+        background-color: #202332 !important;
+        border-color: #202332 !important;
+        padding: 1rem 3rem !important;
+        height: 2rem;
+
+        display: flex !important;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .btn-contact span {
+        font-weight: bold;
+    }
+
+    .link-menu a:hover {
+        font-weight: bold;
+    }
+
+    .link-menu a:hover+.underline-hover-location {
+        width: 100px;
+    }
+
+    .link-menu a:hover+.underline-hover-about {
+        width: 50px;
+    }
+
+    .link-menu a:hover+.underline-hover-home {
+        width: 53px;
+    }
+
+    .link-menu a:hover+.underline-hover-category {
+        width: 91px;
+    }
+
+    .link-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .underline-hover-location {
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+
+        position: absolute;
+        top: 3.5rem;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .underline-hover-about {
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+
+        position: absolute;
+        top: 3.5rem;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .underline-hover-category {
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+
+        position: absolute;
+        top: 3.5rem;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .underline-hover-home {
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+
+        position: absolute;
+        top: 3.5rem;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .nav-menu {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        -webkit-border-top-left-radius: 145px;
+        -webkit-border-bottom-left-radius: 145px;
+        -moz-border-radius-topleft: 145px;
+        -moz-border-radius-bottomleft: 145px;
+        border-top-left-radius: 145px;
+        border-bottom-left-radius: 145px;
+    }
+
+    .nav-menu a:hover {
+        background-color: #FBAF17 !important;
+    }
+
+    .logo {
+        width: 100% !important;
+        background-image: url(../img/bubles.png);
+        background-repeat: no-repeat;
+        background-position: initial;
+        background-size: contain;
+    }
+
+    .logo:hover {
+        background-color: #fff !important;
+    }
+
+    .container-logo {
+        flex-grow: 2;
+    }
+
+    .container-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .container-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .home-cover {
+        height: 119vh;
+    }
 
     .bubles {
         position: absolute;
@@ -21,6 +459,7 @@
         margin-left: 874.33px;
         top: 210.02px;
         opacity: 0.8;
+        display: block;
     }
 
     .bubles-2 {
@@ -30,6 +469,7 @@
         left: 705.93px;
         top: 511.73px;
         opacity: .8;
+        display: block;
     }
 
     .woman-photo {
@@ -38,6 +478,7 @@
         height: 746px;
         margin-left: 589px;
         z-index: 1;
+        display: block;
     }
 
     .stars {
@@ -47,6 +488,7 @@
         left: 827.38px;
         top: 598.17px;
         z-index: 1;
+        display: block;
     }
 
     .ligth {
@@ -56,6 +498,7 @@
         left: 589.55px;
         top: 334.72px;
         z-index: 2;
+        display: block;
     }
 
     .title-cover {
@@ -69,6 +512,8 @@
         width: 32rem;
         letter-spacing: -6px;
         font-family: 'Gotham';
+        margin: 0;
+        text-align: left;
     }
 
     .home-cover p {
@@ -78,24 +523,13 @@
         width: 36rem;
         line-height: 2.5rem;
         font-family: 'Gotham';
+        text-align: left;
     }
 
     .product-btn {
         position: absolute;
         top: 28rem;
         left: 8rem;
-        text-transform: uppercase;
-        background-color: #FBAF17 !important;
-        color: #000 !important;
-        font-weight: bold !important;
-        font-size: 15px;
-        padding: 1rem !important;
-        width: 20rem;
-        border-color: #FBAF17 !important;
-
-        -webkit-box-shadow: 0px 2px 63px 17px rgba(251, 175, 23, 0.12);
-        -moz-box-shadow: 0px 2px 63px 17px rgba(251, 175, 23, 0.12);
-        box-shadow: 0px 2px 63px 17px rgba(251, 175, 23, 0.12);
     }
 
     .product-btn:hover {
@@ -108,14 +542,7 @@
         position: absolute;
         top: 33rem;
         left: 8rem;
-        text-transform: uppercase;
-        color: #fff;
-        font-weight: bold !important;
-        font-size: 15px;
-        background-color: transparent !important;
-        border-color: #fff !important;
-        padding: 1rem !important;
-        width: 20rem;
+        margin: 0;
     }
 
     .aboutus-btn:hover {
@@ -130,25 +557,14 @@
     .see-more {
         position: absolute;
         top: 40rem;
-        color: #fff;
-        font-family: 'Gotham';
-
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-    .see-more a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    .link-see-more {
-        margin-left:1rem;
+        left: 7rem;
+        width: 12rem;
+        padding: 0;
     }
 
     .link-see-more:hover {
         opacity: .5;
+        cursor: default;
     }
 
     .link-see-more:hover+.icon-arrow {

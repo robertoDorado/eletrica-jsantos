@@ -10,11 +10,13 @@
         <h1 class="title-cover">ilumine o seu dia a dia!</h1>
         <p>Aqui na Elétrica J. Santos queremos trazer mais luz para o seu dia a dia!
             Temos produtos para toda sua casa com a melhor qualidade e atendimento da região!</p>
-        <button class="product-btn btn btn-primary">veja nossos produtos</button>
-        <button class="aboutus-btn btn btn-primary">nos conheça melhor</button>
+        <div class="container-buttons">
+            <button class="product-btn btn btn-primary">veja nossos produtos</button>
+            <button class="aboutus-btn btn btn-primary">nos conheça melhor</button>
+        </div>
         <div class="see-more">
-            <a href="#" class="link-see-more">Role para ver mais</a>
-            <i class="fa fa-arrow-down icon-arrow"></i> 
+            <a href="#" class="link-see-more" id="linkSeeMore">Role para ver mais</a>
+            <i class="fa fa-arrow-down icon-arrow"></i>
         </div>
     </div>
 </header>
@@ -22,17 +24,19 @@
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
-        <div class="w3-twothird">
-            <h1>Lorem Ipsum</h1>
-            <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-            <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-
-        <div class="w3-third w3-center">
-            <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+        <div class="container">
+            <div class="background-section-1">
+                <img class="bubles-section-2" src="<?= theme("assets/img/bubles.png") ?>" alt="bubles-section-2">
+                <img class="bubles-section-1" src="<?= theme("assets/img/bubles.png") ?>" alt="bubles-section-1">
+                <h2>produtos em destaque</h2>
+            </div>
+            <div class="card">
+                <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
