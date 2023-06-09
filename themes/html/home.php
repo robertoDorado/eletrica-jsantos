@@ -4,7 +4,7 @@
     <div class="container">
         <img class="ligth" src="<?= theme("assets/img/ligth.png") ?>" alt="ligth">
         <img class="bubles" src="<?= theme("assets/img/bubles.png") ?>" alt="bubles">
-        <img class="bubles-2" src="<?= theme("assets/img/bubles-2.png") ?>" alt="bubles-2">
+        <img class="bubles-2" src="<?= theme("assets/img/bubles.png") ?>" alt="bubles">
         <img class="woman-photo" src="<?= theme("assets/img/woman-photo.png") ?>" alt="woman-photo">
         <img class="stars" src="<?= theme("assets/img/stars.png") ?>" alt="stars">
         <h1 class="title-cover">ilumine o seu dia a dia!</h1>
@@ -27,7 +27,7 @@
         <div class="container">
             <div class="background-section-1">
                 <img class="bubles-section-2" src="<?= theme("assets/img/bubles.png") ?>" alt="bubles-section-2">
-                <img class="bubles-section-1" src="<?= theme("assets/img/bubles.png") ?>" alt="bubles-section-1">
+                <img class="bubles-section-1" src="<?= theme("assets/img/gray-bubles.png") ?>" alt="bubles-section-1">
                 <h2>produtos em destaque</h2>
             </div>
             <div class="row-hilight-products">
@@ -56,25 +56,73 @@
 </div>
 
 <!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="w3-content">
-        <div class="w3-third w3-center">
-            <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-        </div>
-
-        <div class="w3-twothird">
-            <h1>Lorem Ipsum</h1>
-            <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-            <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container background-section-2">
+    <div class="w3-content content-section-2">
+        <img src="<?= theme("assets/img/gray-bubles.png") ?>" alt="bubles">
+        <h3>categorias</h3>
     </div>
 </div>
+<div class="container category-container">
+    <a href="#">
+        <img src="<?= theme("assets/img/products/lamps.png") ?>" alt="lamps">
+        <div class="underline-lamps"></div>
+        <span>Lâmpadas</span>
+    </a>
+    <a href="#">
+        <img src="<?= theme("assets/img/products/chandeliers.png") ?>" alt="chandeliers">
+        <div class="underline-chandeliers"></div>
+        <span>Lustres</span>
+    </a>
+    <a href="#">
+        <img src="<?= theme("assets/img/products/big-lamps.png") ?>" alt="big-lamps">
+        <div class="underline-big-lamps"></div>
+        <span>Luminárias</span>
+    </a>
+    <a href="#">
+        <img src="<?= theme("assets/img/products/decorations.png") ?>" alt="decorations">
+        <div class="underline-decorations"></div>
+        <span>Decorações</span>
+    </a>
+    <a href="#">
+        <img src="<?= theme("assets/img/products/accessories.png") ?>" alt="accessories">
+        <div class="underline-accessories"></div>
+        <span>Acessórios</span>
+    </a>
+    <a href="#">
+        <img src="<?= theme("assets/img/products/tools.png") ?>" alt="tools">
+        <div class="underline-tools"></div>
+        <span>Ferramentas</span>
+    </a>
+    <a href="#">
+        <img src="<?= theme("assets/img/products/household-items.png") ?>" alt="household-items">
+        <div class="underline-household-items"></div>
+        <span>Utensílios Domésticos</span>
+    </a>
+    <a href="#">
+        <img src="<?= theme("assets/img/products/cables.png") ?>" alt="cables">
+        <div class="underline-cables"></div>
+        <span>Cabos</span>
+    </a>
+</div>
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+<div class="ww3-row-padding w3-container background-section-3">
+    <div class="w3-content content-title-section-3">
+        <img src="<?= theme("assets/img/gray-bubles.png") ?>" alt="gray-bubles">
+        <h4>sua melhor opção</h4>
+    </div>
+    <div class="content-section-3">
+        <img class="banner" src="<?= theme("assets/img/img-section-3.png") ?>" alt="img-section-3">
+        <img class="thumbs-up-sharp" src="<?= theme("assets/img/thumbs-up-sharp.png") ?>" alt="thumbs-up-sharp">
+        <p>
+            Desde 1970 somos especializados em materiais elétricos, sendo uma das principais distribuidoras
+            do setor. Oferecemos os melhores produtos, com o preço que cabe no seu bolso e atende todas
+            as necessidades do seu dia a dia. 📍 Venha conhecer a nossa loja, estamos na Avenida Rio das Pedras
+            , 85/89, em Vila Carrão-SP. Aqui você irá encontrar lustres, luminárias, utilidades domésticas, 
+            ferramentas, acessórios, lâmpadas, fios e cabos, quadros de distribuição, caixas de entrada padrão 
+            Eletropaulo, materiais elétricos em geral, equipamentos de segurança e comunicação.
+        </p>
+        <button class="btn btn-primary">saiba mais sobre nós</button>
+    </div>
 </div>
 
 <!-- Footer -->
