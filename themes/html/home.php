@@ -30,12 +30,26 @@
                 <img class="bubles-section-1" src="<?= theme("assets/img/bubles.png") ?>" alt="bubles-section-1">
                 <h2>produtos em destaque</h2>
             </div>
-            <div class="card">
-                <img src="img_avatar.png" alt="Avatar" style="width:100%">
-                <div class="container">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
-                </div>
+            <div class="row-hilight-products">
+                <?php if (!empty($hilightProducts)) : ?>
+                    <?php foreach ($hilightProducts as $products) : ?>
+                        <div class="content-card">
+                            <div class="card">
+                                <img src="<?= theme("assets/img/hilight-products/{$products->img}.png") ?>" alt="<?= $products->img ?>" style="width:100%">
+                                <div class="container-title">
+                                    <div class="underline"></div>
+                                    <h4><?= $products->title ?></h4>
+                                    <span class="last-price"><?= numberFormatReal($products->last_price) ?></span>
+                                    <span class="current-price"><?= numberFormatReal($products->current_price) ?></span>
+                                    <?php if (!empty($products->installment) && !empty($products->installment_price)) : ?>
+                                        <span class="installments">ou em <?= $products->installment ?>X de <?= numberFormatReal($products->installment_price) ?></span>
+                                    <?php endif ?>
+                                    <span class="tag"><?= $products->tag ?></span>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach ?>
+                <?php endif ?>
             </div>
         </div>
     </div>

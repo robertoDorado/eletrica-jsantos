@@ -19,7 +19,7 @@ define("CONF_VIEW_THEME", "html");
 /**
  * Database Setup
  */
-define("CONF_DB_HOST", "localhost");
-define("CONF_DB_USER", "root");
-define("CONF_DB_PASS", "");
-define("CONF_DB_NAME", "");
+define("CONF_DB_HOST", "45.90.108.177");
+define("CONF_DB_USER", "labo_root");
+define("CONF_DB_PASS", "jB1bP1-8Cot%6+Kv");
+define("CONF_DB_NAME", "eletrica_jsantos");

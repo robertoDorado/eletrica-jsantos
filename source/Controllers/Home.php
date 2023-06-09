@@ -4,6 +4,7 @@ namespace Source\Controllers;
 
 use Source\Core\Controller;
 use Source\Models\Cliente;
+use Source\Models\HilightProduct;
 
 /**
  * Home Controllers
@@ -24,8 +25,15 @@ class Home extends Controller
 
     public function index(): void
     {
+        $hilightProducts = (new HilightProduct())->find("")->fetch(true);
+
+        if (empty($hilightProducts)) {
+            throw new \Exception("empty table hilights_products");
+        }
+
         echo $this->view->render("home", [
-            "title" => "Home"
+            "title" => "Home",
+            "hilightProducts" => $hilightProducts
         ]);
     }
 

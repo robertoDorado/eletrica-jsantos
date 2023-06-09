@@ -1,5 +1,10 @@
 <?php
 
+function numberFormatReal($value) {
+    $value = number_format($value, 2, ',', '.');
+    return 'R$ ' . $value;
+}
+
 /**
  * @param string $path
  * @return string
