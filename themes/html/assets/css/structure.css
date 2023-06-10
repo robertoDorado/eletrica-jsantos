@@ -593,6 +593,25 @@ footer .bubles-footer {
     opacity: 1;
 }
 
+.error-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-section h1 {
+    font-family: 'Gotham';
+    font-weight: bold;
+}
+
+.error-section p {
+    font-family: 'Gotham';
+    font-weight: bold;
+}
+
 @media (min-width: 1000px) {
 
     .orange-footer-underline {

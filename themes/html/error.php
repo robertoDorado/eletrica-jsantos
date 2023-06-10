@@ -1,2 +1,5 @@
 <?php $v->layout("_theme") ?>
-<h1>Error: <?= $error_code ?></h1>
+<section class="container error-section">
+    <h1>Erro: <?= $error_code ?>!</h1>
+    <p>Página não encontrada!</p>
+</section>
