@@ -37,6 +37,10 @@
 </head>
 
 <body>
+
+    <div class="loader-page" id="loader">
+        <img src="<?= theme("assets/img/loader.gif") ?>" alt="loader">
+    </div>
     <!-- Navbar -->
     <div>
         <div class="w3-bar w3-card w3-left-align w3-large container-nav">
@@ -168,6 +172,43 @@
 
     </div>
     <?= $v->section("content"); ?>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-center">
+        <img class="bubles-footer" src="<?= theme("assets/img/bubles.png") ?>" alt="bubles">
+        <div class="content-footer">
+            <div class="content-footer-a">
+                <img class="logo-footer" src="<?= theme("assets/img/logo.png") ?>" alt="logo">
+                <p>Venha na Elétrica J. Santos e garanta a melhor opção para sua casa!</p>
+            </div>
+            <div class="content-footer-b">
+                <span>nos siga nas redes sociais</span>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-whatsapp"></i>
+            </div>
+        </div>
+        <div class="orange-footer-underline"></div>
+        <div class="gray-footer-underline"></div>
+        <div class="container-copyright">
+            <p>© Copyright <?= date('Y') ?> - Elétrica J. Santos - Todos os Direitos Reservados</p>
+            <a href="https://noweb.io" target="_blank">
+                <p>Desenvolvido por <img src="<?= theme("assets/img/logo-agency.png") ?>" alt="logo-agency"></p>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
 </body>
 <script src="<?= theme("/assets/scripts.js") ?>"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
