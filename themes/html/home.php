@@ -25,6 +25,10 @@
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="container">
+            <div class="background-section-1-mobile">
+                <h2>produtos em destaque</h2>
+                <div class="underline-hilight-product"></div>
+            </div>
             <div class="background-section-1">
                 <img class="bubles-section-2" src="<?= theme("assets/img/bubles.png") ?>" alt="bubles-section-2">
                 <img class="bubles-section-1" src="<?= theme("assets/img/gray-bubles.png") ?>" alt="bubles-section-1">

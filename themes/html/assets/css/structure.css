@@ -214,12 +214,10 @@
 
 .row-hilight-products {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-
     margin-top: 0;
-    margin-left: 1rem;
 }
 
 .content-card {
@@ -331,17 +329,17 @@
     text-transform: uppercase;
     font-weight: bold;
     position: absolute;
-    top: 34.5rem;
-    z-index: -1;
-    right: 1.5rem;
+    margin-top: -2rem;
 }
 
 .background-section-1 {
-    background: url(../img/background-section-1.png);
-    width: 100%;
-    height: 5px;
-    border-radius: 1rem;
-    margin-top: -0.5rem;
+    display:none;
+}
+
+.underline-hilight-product {
+    width:280px;
+    height:1.5px;
+    background-color: #202332;
 }
 
 .background-section-2 {
@@ -612,7 +610,26 @@ footer .bubles-footer {
     font-weight: bold;
 }
 
+.background-section-1-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-section-1-mobile h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Gotham';
+    font-size: 1.4rem;
+}
+
 @media (min-width: 1000px) {
+
+
+    .background-section-1-mobile {
+        display:none;
+    }
 
     .orange-footer-underline {
         width: 500px;
@@ -857,6 +874,7 @@ footer .bubles-footer {
     }
 
     .row-hilight-products {
+        flex-direction: row;
         margin-top: -6rem;
     }
 
@@ -881,6 +899,7 @@ footer .bubles-footer {
     }
 
     .background-section-1 {
+        display:block;
         background: url(../img/background-section-1.png);
         width: 750px;
         height: 350px;
